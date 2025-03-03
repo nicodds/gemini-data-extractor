@@ -17,16 +17,10 @@ pip install gemini-data-extractor
 You can use the tool by running the following command (see also "Authentication" below):
 
 ```bash
-gemini-data-extractor --path path/to/your/file.pdf --prompt "Your prompt here"
+gemini-data-extractor --path path/to/your/file.pdf --prompt-text "Your prompt here"
 ```
 
-The tool will return the extracted data in JSON format to the standard output. You can also save the output to a file using the `--output` argument:
-
-```bash
-gemini-data-extractor --path path/to/your/file.jpg --prompt "Your prompt here" --output output.json
-```
-
-In case of a long prompt, you can save it to a file and pass the path to the file using the `--prompt-file` argument:
+The tool will return the extracted data in JSON format to the standard output. In case of a long prompt, you can save it to a file and pass the path to the file using the `--prompt-file` argument:
 
 ```bash
 gemini-data-extractor --path path/to/your/file.png --prompt-file path/to/your/prompt.txt
