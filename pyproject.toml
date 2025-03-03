@@ -1,7 +1,7 @@
 [project]
 name = "gemini-data-extractor"
-version = "0.1.0"
-description = "A simple tool to extract data from data from PDFs and images using Google's gemini-2.0-flash-001 model."
+version = "0.1.1"
+description = "A simple tool to extract data from PDFs and images using Google's gemini-2.0-flash-001 model."
 authors = [
     {name = "Domenico Delle Side", email = "nico@delleside.org"}
 ]
