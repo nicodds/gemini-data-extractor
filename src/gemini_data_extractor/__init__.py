@@ -1,11 +1,14 @@
 from argparse import ArgumentParser, Namespace
 import os
 from typing import Optional, Tuple
+import warnings
 
 from .api_caller import ApiCaller
 
 
 def main() -> None:
+    warnings.filterwarnings("ignore", category=UserWarning)
+
     args = _setup_argparser().parse_args()
     api_key, project_id, location = _get_variables(args)
 
